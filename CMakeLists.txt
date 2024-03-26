@@ -26,6 +26,7 @@ add_compile_options(-faligned-new -march=native -g -O3)
 # add_subdirectory(src/competitor/wormhole)
 add_subdirectory(src/competitor/wormhole_u64)
 add_subdirectory(src/competitor/masstree)
+add_subdirectory(src/competitor/DILI/src)
 
 # microbench
 add_executable(microbench
@@ -37,6 +38,17 @@ target_link_libraries(microbench
         # WORMHOLE
         WORMHOLEU64
         MASSTREE
+#        DILI begin
+        dili_func
+        butree_func
+        global_func
+        database_func
+        utils_func
+        pthread
+        stdc++fs
+#        DILI end
 )
 
 target_link_libraries(microbench PUBLIC OpenMP::OpenMP_CXX ${JEMALLOC_LIBRARIES} ${MKL_LIBRARIES} ${TBB_LIBRARIES})
+
+add_executable(generateData datasets/generateData.cpp)
