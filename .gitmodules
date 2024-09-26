@@ -33,3 +33,6 @@
 [submodule "src/competitor/hot/src"]
 	path = src/competitor/hot/src
 	url = https://github.com/speedskater/hot.git
+[submodule "src/competitor/dili/src"]
+	path = src/competitor/dili/src
+	url = https://github.com/jingtao8a/DILI_experiment.git
