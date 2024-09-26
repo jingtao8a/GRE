@@ -6,4 +6,5 @@
 --table_size=-1 \
 --init_table_ratio=0.5 \
 --thread_num=1 \
---index=DILI
+--index=DILI \
+--memory
