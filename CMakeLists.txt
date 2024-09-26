@@ -24,7 +24,7 @@ include_directories(SYSTEM src/competitor/hot/src/libs/idx/content-helpers/inclu
 add_compile_options(-faligned-new -march=native -g -O3)
 
 # add_subdirectory(src/competitor/wormhole)
-add_subdirectory(src/competitor/wormhole_u64)
+#add_subdirectory(src/competitor/wormhole_u64)
 add_subdirectory(src/competitor/masstree)
 add_subdirectory(src/competitor/DILI/src)
 
@@ -36,7 +36,7 @@ add_executable(microbench
 target_link_libraries(microbench
         PRIVATE
         # WORMHOLE
-        WORMHOLEU64
+#        WORMHOLEU64
         MASSTREE
 #        DILI begin
         dili_func
