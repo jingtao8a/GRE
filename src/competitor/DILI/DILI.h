@@ -62,6 +62,7 @@ void DILIInterface<KEY_TYPE, PAYLOAD_TYPE>::bulk_load(std::pair <KEY_TYPE, PAYLO
     });
     std::cout << "std::sort end" << std::endl;
     dili.bulk_load(bulk_load_data);
+    std::cout << "DILIInterface::bulk_load end" << std::endl;
 }
 
 template<class KEY_TYPE, class PAYLOAD_TYPE>
